@@ -29,7 +29,7 @@ last_updated: 2016-07-11
 
 [Pokemon Go guidelines](https://support.pokemongo.nianticlabs.com/hc/en-us/articles/221993967-Pok%C3%A9mon-GO-Trainer-guidelines)
 
-说实话其实并不在乎Fake的玩家，游戏的目的是娱乐自己，而不影响别人，飞机确实影响了游戏性，官方也肯定会采取措施，只是长远来看，那些玩家并不会长期的玩这个游戏，只要我们坚持的更远我们就赢了。要去验证一个账户的非法性实在太过困难。
+说实话其实并不在乎Fake的玩家，游戏的目的是娱乐自己，而不影响别人，飞机确实影响了游戏性，官方也肯定会采取措施，只是长远来看，那些玩家并不会长期的玩这个游戏，只要我们坚持的更远我们就赢了。正如官方所说，作弊的方法 are limited only by imaginations ，自律自觉吧。
 
 ## Getting Started
 在开始的时候，有些内容其实完全不用讲，怎么移动小人（Avatar）？怎么获取物品？在游戏过程中有着非常详细的引导。也就不值得一说了。下面是一些游戏中会出现的术语（不包括全部，显而易见的就不列了）：
@@ -110,3 +110,35 @@ CP 是 Combat Power 缩写， HP 是 Hit Points 缩写。
 
 From:[Help](https://support.pokemongo.nianticlabs.com/hc/en-us/articles/222049707)
 
+## Q & A
+
+### 什么是 Pokemon Go
+Pokemon Go 是一款基于地理现实的手机游戏，由 Niantic，任天堂，The Pokemon Company合作开发发行。
+
+参考：[官网](http://pokemongo.nianticlabs.com/en/)
+
+### 等级的上限？
+目前为止并没有看见官方文档有任何描述，不过有如下图：
+
+![level](https://lh3.googleusercontent.com/-M72Tp2Dj3fA/V4O4rGk577I/AAAAAAAA_2E/0IBCCeWDfYIas0A4kJ2kTfCjgsUw6Q5yQCL0B/w772-h872-no/IMG_20160711_172057.jpg)
+
+### 如何快速的定位周围的 Pokemon？
+附近的Pokemon 有图鉴可以看到，爪子的数量表示远近。
+
+![Pokemon nearby](https://lh3.googleusercontent.com/-HI47wAGuflw/V4O3odgJ5mI/AAAAAAAA_1U/j9jSRkaNvV0zhzOvoRCTBlE5rT2kBAZhACL0B/w491-h872-no/IMG_20160711_080907.jpg)
+
+### 关于 Pokemon 的稀有程度？
+有一幅图完美的解决：
+
+![Pokemon where can see](https://lh5.googleusercontent.com/-NjgPFqpsPoY/V4O3oZJpJLI/AAAAAAAA_1U/k-viXegISRgbKeiMEF6iX8_ATlXlBzZUQCL0B/w794-h872-no/IMG_20160711_162619.jpg)
+
+### 能够孵化的小精灵？
+如图：
+
+![孵化的小精灵](https://lh6.googleusercontent.com/-8cvfpT5y3TU/V4O3oVDeDcI/AAAAAAAA_1U/J4bN4dza1oMwOKGw1hKGe6qOWtt7BW3LgCL0B/w1280-h867-no/IMG_20160711_214535.jpg)
+
+## More
+
+如果当你真的看到这里的时候，想要了解更多可以加入 Pokemon Go 红队的 Telegram [群](https://telegram.me/joinchat/BWasqD7qvm6msgr0Rgo_qA)
+
+当然如果依然有不知道的内容，官方文档以及Google都会给你完整的答案。如果真的互联网上不存在你所讨论的问题，那去群里确实也只能是最后一个方法了。

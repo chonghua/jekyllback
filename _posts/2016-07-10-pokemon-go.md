@@ -5,7 +5,7 @@ tagline: ""
 description: ""
 category: 产品体验
 tags: [产品体验, Ingress, AR, Game, Niantic, Pokemon, PokemonGo]
-last_updated: 
+last_updated: 2016-07-11
 ---
 
 期待这款产品久矣，从开始玩 Ingress 开始，就一直想着这样一款基于地理现实的游戏将如何发展，至少从今天的火热程度看来相信 Niantic 之后的路不会那么坎坷。其实从逻辑上 Pokemon Go 只是在 Ingress 的逻辑上增加了一层皮肤，原先的 Portal 变成了 Pokestop，原先的 8 塔变成了道馆的等级，原先可以 Hack 的到装备，到 Pokemon Go 中依然可以利用 Spin Pokestop 来获取装备。区别在于 Ingress 一切都是从头开始，什么是 XM，什么是欧洲核子中心，这些都是 Niantic 自己的定义，而如今一切都变得熟悉，皮卡丘，精灵球，甚至野外遇见的每一只小精灵，卖萌的同时，一边也唤醒了很多人儿时的记忆。
@@ -37,14 +37,22 @@ last_updated:
 ### Glossary
 
 - Candy 可以在捕获 Pokemon ，孵化宝宝，或者将 Pokemon 送给教授时获得。Candy 可以用来进化或者增强 Pokemon。
+    - 抓怪获取 3 个
+    - 送给教授 1 个
+    - 孵蛋 10-20 个
 - Incense 蚊香，熏香？用来吸引 Pokemon。
 - Lure Module 短时间内可以吸引 Pokemon 到 Pokestop。
 - Defender Bonus 防御奖励，防御道馆可以按时领金币和 Stardust。
 - Potions 药水，恢复 Pokemon 的 HP。
 - Stardust  可以在抓取 Pokemon ，孵化宝宝 (Egg) ，或者在 Defender Bonus 的时候获取。
+    - 抓怪 100
+    - 孵蛋 600-800
+    - 占领道馆 500/个 * 20h
 - Razz Berry 在遭遇野外 Pokemon 时，喂它们吃可以更容易抓取。
 
 From: [help](https://support.pokemongo.nianticlabs.com/hc/en-us/articles/222049307-Glossary)
+
+根据 Telegram [红队群](https://goo.gl/GcYCZz)中 [@girigirigiri Eye](https://telegram.me/anorlondo) 的详细介绍。
 
 ### 背包中物品
 

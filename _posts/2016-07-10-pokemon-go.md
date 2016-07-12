@@ -5,7 +5,7 @@ tagline: ""
 description: ""
 category: 产品体验
 tags: [产品体验, Ingress, AR, Game, Niantic, Pokemon, PokemonGo]
-last_updated: 2016-07-11
+last_updated: 2016-07-12
 ---
 
 期待这款产品久矣，从开始玩 Ingress 开始，就一直想着这样一款基于地理现实的游戏将如何发展，至少从今天的火热程度看来相信 Niantic 之后的路不会那么坎坷。其实从逻辑上 Pokemon Go 只是在 Ingress 的逻辑上增加了一层皮肤，原先的 Portal 变成了 Pokestop，原先的 8 塔变成了道馆的等级，原先可以 Hack 的到装备，到 Pokemon Go 中依然可以利用 Spin Pokestop 来获取装备。区别在于 Ingress 一切都是从头开始，什么是 XM，什么是欧洲核子中心，这些都是 Niantic 自己的定义，而如今一切都变得熟悉，皮卡丘，精灵球，甚至野外遇见的每一只小精灵，卖萌的同时，一边也唤醒了很多人儿时的记忆。
@@ -142,3 +142,5 @@ Pokemon Go 是一款基于地理现实的手机游戏，由 Niantic，任天堂�
 如果当你真的看到这里的时候，想要了解更多可以加入 Pokemon Go 红队的 Telegram [群](https://telegram.me/joinchat/BWasqD7qvm6msgr0Rgo_qA)
 
 当然如果依然有不知道的内容，官方文档以及Google都会给你完整的答案。如果真的互联网上不存在你所讨论的问题，那去群里确实也只能是最后一个方法了。
+
+更新一点声明，文中所用图片，部分来自 reddit , 部分来自 Telegram , 有一些来源我确实已经无法找到，如果有任何侵权行为，请联系我。

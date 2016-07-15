@@ -22,9 +22,9 @@ last_updated:
 说了这么多，其实重点想要谈谈他的贴图以及 Bot 系统。首先是贴图，在刚上手 Telegram 的时候，我就被他丰富的表情震撼到了，就像他在 [Blog 中所说](https://telegram.org/blog/stickers)， Telegram 觉得现存任何一个 IM 的表情系统设置都不是很理想，封闭，收费，并且糟糕透顶，于是 Telegram 大笔一挥自己做了一套系统，这是我迄今为止使用过最赞的表情贴图系统。尤其是在最近迷上 Pokemon Go 之后，更是找到了很多萌萌的小精灵。
 
 从下面两个网站能够找到你想要的绝大多数表情，多到无法想象：
-- http://stickergram.ru/13.html
 
-- http://telesticks.eu/
+- <http://stickergram.ru/13.html>
+- <http://telesticks.eu/>
 
 
 如果这两个网站都无法让你满足，Google，以及官方的 @sticker 机器人都可以帮你找到喜欢的表情。

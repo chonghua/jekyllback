@@ -242,7 +242,7 @@ Face++ 提供了联网的人脸检测服务，需要到其网站上注册开发�
 
 ![Face++ Detect](https://lh4.googleusercontent.com/-zNsRgSMnO10/V6899VHy_BI/AAAAAAABA94/nejE8EBBYn0Q8Zx_Xbx_tIZFjT1SSY5YwCL0B/w506-h900-no/Screenshot_20160813-233236.png)
 
-![](https://lh4.googleusercontent.com/-b2xwMmkue54/V6899QoTCzI/AAAAAAABA94/qs11ZhIW2E0PUjY6AoHRS92QpFmFNOqrQCL0B/w506-h900-no/Screenshot_20160807-214743.png)
+![Detect result](https://lh4.googleusercontent.com/-b2xwMmkue54/V6899QoTCzI/AAAAAAABA94/qs11ZhIW2E0PUjY6AoHRS92QpFmFNOqrQCL0B/w506-h900-no/Screenshot_20160807-214743.png)
 
 FaceDetectDemo 代码可参考：<https://github.com/einverne/AndroidFaceDetectDemo>
 

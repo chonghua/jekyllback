@@ -454,6 +454,10 @@ From wiki
 
 注意计数排序的元素数值与位置的联系,引申到基数排序的从元素得到中间值然后与位置的联系.
 
+## 枚举排序 {#enumeration-sort}
+通常也被叫做秩排序(Rank Sort) ，算法基本思想是：对每一个要排序的元素，统计小于它的所有元素的个数，从而得到该元素在整个序列中的位置，时间复杂度为O（n^2）
+
+
 ## reference
 
 - <http://www.sorting-algorithms.com/>

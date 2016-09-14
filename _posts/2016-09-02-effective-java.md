@@ -5,12 +5,11 @@ tagline: ""
 description: ""
 category: 学习笔记
 tags: [Android, Java, ]
-last_updated: 
+last_updated: 2016-09-13
 ---
 
 
 Java 语言四种类型：
-
 
 - 接口
 - 类
@@ -22,118 +21,115 @@ Java 语言四种类型：
 在Java中一共有8种基本数据类型，其中有4种整型，2种浮点类型，1种用于表示Unicode编码的字符单元的字符类型和1种用于表示真值的boolean类型。（一个字节等于8个bit）
 
 1.整型
-类型    |   存储需求    | bit数  |  取值范围   |   备注
+类型    | 存储需求    | bit数  |  取值范围   |   备注
 -------|--------------|-------|------------|----------
 byte   | 1字节        | 1*8   |  -128～127  |
 short  | 2字节        | 2*8   | -32768～32767 |
 int    | 4字节        | 4*8   | -2^31 ~ 2^31-1  |
-long   | 8字节        | 8*8   |                |
+long   | 8字节        | 8*8   | -2^63 ~ 2^63-1 |               |
 
 2.浮点型
-类型    |   存储需求   |   bit数    | 取值范围  |     备注
-------| -------------|-----------|-----------|-----------
-float   | 4字节      |  4*8  |     |  float类型的数值有一个后缀F(例如：3.14F)
-double  | 8字节      |  8*8  |      |             没有后缀F的浮点数值(如3.14)默认为double类型
+类型    | 存储需求   |   bit数  | 取值范围  |     备注
+-------| ---------|---------|-----------|-----------
+float   | 4字节    |  4*8  | 2^-149 ~ (2-2^-23)·2^127 | float类型的数值有一个后缀F(例如：3.14F)
+double  | 8字节    |  8*8  | 2^-1074 ~ (2-2^-52)·2^1023    | 没有后缀F的浮点数值(如3.14)默认为double类型， Double 有静态变量 `MIN_VALUE` 和 `MAX_VALUE`。
 
 3.char类型
 类型    |     存储需求  |   bit数  |   取值范围   |   备注
 ---------|------------|----------|-------------|----------
-char     | 2字节       |   2*8    |   0 to 65,535    |
+char     | 2字节       |   2*8    | 0 ~ 65,535  |
 
 4.boolean类型
 类型   |  存储需求  |   bit数   |  取值范围    |   备注
----------|------------|----------|-------------|----------
-boolean    |    1字节     |     1*8  |    false、true | 
+-------|---------|----------|-------------|----------
+boolean  | 1字节     | 1*8  |  false、true | 
 
-补充：Java有一个能够表示任意精度的算书包，通常称为“大数值”(big number)。虽然被称为大数值，但它并不是一种Java类型，而是一个Java对象。
-如果基本的整数和浮点数精度不能够满足需求，那么可以使用java.math包中的两个很有用的类：BigIntegerBigDecimal(Android SDK中也包含了java.math包以及这两个类)这两个类可以处理包含任意长度数字序列的数值。BigInteger类实现了任意精度的整数运算，BigDecimal实现了任意精度的浮点数运算。具体的用法可以参见Java API。
+补充：Java 有一个能够表示任意精度的算术包，通常称为“大数值”(big number)。虽然被称为大数值，但它并不是一种Java类型，而是一个Java对象。
+如果基本的整数和浮点数精度不能够满足需求，那么可以使用 `java.math` 包中的两个很有用的类：BigInteger 和 BigDecimal (Android SDK中也包含了java.math包以及这两个类)这两个类可以处理包含任意长度数字序列的数值。BigInteger 类实现了任意精度的整数运算，BigDecimal 实现了任意精度的浮点数运算。具体的用法可以参见Java API。
+
+BigInteger 和 BigDecimal 都是不可变 immutable ，类似于 String， 在使用
+
+```
+BigInteger sum = new BigInteger.valueOf(0);
+sum.add(BigInteger.valueOf(10));    // wrong way, sum is still 0
+sum = sum.add(BigInteger.valueOf(10));   // right way, add() return a BigInteger Object.
+```
+
+# 创建和销毁对象
+
+## 1. 静态工厂方法代替构造器
+优点：1. 静态工厂方法有名字； 2. 不必要每次调用的时候都创建一个新的对象。 3. 返回原返回类型的任何子类型对象。 4. 创建参数化类型实例的时候使代码变得更加简洁。
+
+## 2. 遇到多个构造器参数时要考虑使用构造器
+
+Builder 模式，代码易读，模拟了具名的可选参数，build 方法可检验约束条件。 builder 可以自动填充某些域，比如每次创建对象的时自动增加序列号。
+
+类的构造器或者静态工厂中具有多个参数时，设计这种类， Builder 模式可考虑，特别是当大多数参数都是可选的时候。
 
 
-
-静态工厂方法代替构造器
-
-
-3. 用私有构造器或者枚举类型强化 Singleton 属性
+## 3. 用私有构造器或者枚举类型强化 Singleton 属性
 
 共有静态成员 final 域
 
 ```
-
 public class Elvis {
-
-     public static final Elvis INSTANCE = new Elvis();
-
-     private Elvis() { … }
-
-
-     public void leaveTheBuilding() {…}
+    public static final Elvis INSTANCE = new Elvis();
+    private Elvis() { … }
+    public void leaveTheBuilding() {…}
 
 }
-
 ```
-
+静态方法所有调用，都会返回同一个对象引用，不会创建其他 Elvis 实例。
 
 
 公有的成员是静态工厂方法：
 
 ```
-
 public class Elvis {
-
-     private static final Elvis INSTANCE = new Elvis();
-
-     private Elvis() { … }
-
-     public static Elvis getInstance() { return INSTANCE; }
-
-
-     public void leaveTheBuilding() {…}
-
+    private static final Elvis INSTANCE = new Elvis();
+    private Elvis() { … }
+    public static Elvis getInstance() { return INSTANCE; }
+    
+    public void leaveTheBuilding() {…}
 }
-
 ```
 
 
-4. 通过私有构造器强化不可实例化的能力
+## 4. 通过私有构造器强化不可实例化的能力
 
 希望一个类不能被实例化，则私有化构造方法
 
-5. 避免创建不必要的对象
+## 5. 避免创建不必要的对象
 
 ```
-
 String s1 = "string";
 
 String s2 = new String("string");  // don‘t do this
 
 ```
 
+当心无意识的基本类型自动装箱。
 
+## 6. 清除过期的对象引用
 
-6. 清除过期的对象引用
-
-
-
-Java 内存泄露
+Java 内存泄露可能发生在：
 
 - 类自我管理内存
 
     比如在实现 Stack 栈时，弹出栈时，消除对象引用，结束变量的生命周期。
 
 - 缓存
-
-
-
 - 监听器或者其他回调。
 
 
-7. 避免使用终结方法
+## 7. 避免使用终结方法
+提供显式的终止方法，要求类客户端在每个实例不再有用的时候调用这个方法。 Java 中 FileInputStream， FileOutputStream，Timer 和 Connection 都具有终结方法。
 
 
+# 第3章
+所有对象都通用的方法， 非 final 方法（equals、hashCode、toString、clone 和 finalize）都有明确的通用约定，被设计成被覆盖。
 
-## 第3章
-
-8. 覆盖 equals 时请遵守通用约定
+## 8. 覆盖 equals 时请遵守通用约定
 
 类的每个实例都只与它自身相等 
 
@@ -162,14 +158,14 @@ equals 等价关系：自反，对称，传递，一致
 
 
 
-9. 覆盖 equals() 时一定要覆盖 hashCode()
+## 9. 覆盖 equals() 时一定要覆盖 hashCode()
 
 
-10. 始终覆盖 toString
+## 10. 始终覆盖 toString
 
-11. 谨慎地覆盖 clone
+## 11. 谨慎地覆盖 clone
 
-12. 考虑实现 Comparable 接口
+## 12. 考虑实现 Comparable 接口
 
 
 

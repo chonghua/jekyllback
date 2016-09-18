@@ -228,7 +228,12 @@ android{
 
 下排除。
 
+更加系统的学习 Android Gradle build system 可以参考官方文档，或者中文译本[^3]。
+
+关于 `build.gradle` 文件中的字段属性，可以参考 [Android Plugin DSL Reference](http://google.github.io/android-gradle-dsl/current/).
+
 
 ## referencee
 [^1]: [StackOverflow](http://stackoverflow.com/questions/26609734/how-to-enable-multidexing-with-the-new-android-multidex-support-library) 和 [官网](https://developer.android.com/studio/build/multidex.html) 
 [^2]: http://stackoverflow.com/questions/31926189/android-debugging-with-minifyenabled-true
+[^3]: [Gradle for Android](https://chaosleong.gitbooks.io/gradle-for-android/)

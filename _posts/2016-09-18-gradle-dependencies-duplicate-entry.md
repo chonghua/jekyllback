@@ -12,12 +12,15 @@ last_updated:
 
 ## 问题
 项目中遇到如下错误：
+
 ```
 Error:Execution failed for task ':mobile:packageAllDebugClassesForMultiDex'.
 > java.util.zip.ZipException: duplicate entry:android/support/annotation/AnyRes.class
 ```
+
 这个问题是因为项目中引入了 `support-annotations` 包，但是导入的其他 jar 包中包含了这个package，重复导致了 `duplicate entry` 错误。
 在 app 的 `build.gradle` 中加入：
+
 ```
 android{
     ...
@@ -64,6 +67,7 @@ buildTypes {
 ```
 
 multiDex 的错误倒是还好解决[^1]，设置：
+
 ```
 android {
     compileSdkVersion 22
@@ -104,6 +108,7 @@ Gradle 项目可能依赖其他组件，包括外部的二进制文件，或者�
 
 ### 本地依赖
 下面代码可以添加本地 `libs` 目录下所有 jar 包：
+
 ```
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -127,6 +132,7 @@ android {
 
 ### 远程依赖
 Gradle 支持从远端 Maven 或者 Ivy repositories 自动拉取依赖。首先远端 repository 需要加入列表，其次需要定义具体依赖。
+
 ```
 repositories {
      jcenter()
@@ -142,6 +148,7 @@ android {
     ...
 }
 ```
+
 Note:
 - `jcenter()` 是远端库的URL缩写， Gradle 支持本地和远程库。
 - Gradle 如果发现依赖需要使用其他依赖会自动pull其他依赖。
@@ -167,6 +174,7 @@ MyProject/
 :libraries:lib2
 ```
 每一个项目都有自己的 `build.gradle` 文件，另外在跟目录下有 `settings.gradle` 来描述工程：
+
 ```
 MyProject/
  | settings.gradle
@@ -219,7 +227,6 @@ android{
 ```
 
 下排除。
-
 
 
 ## referencee

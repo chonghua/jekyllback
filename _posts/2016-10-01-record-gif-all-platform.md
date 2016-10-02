@@ -10,6 +10,7 @@ last_updated:
 
 以前写过一篇[文章](/post/2016/01/byzanz-record.html)讲的是如何在 Linux 下使用 byzanz 来录制 GIF，并且能够达到很好的效果，并且文件大小非常合适网络分享。现在就介绍下在其他两大平台 Win/Mac 下录制 GIF 的工具。
 
+## LICEcap
 录屏 GIF 工具名字叫做： LICEcap 。这也是一款我在使用很长时间之后感觉非常好用的工具。他的官网地址：
 
 <http://www.cockos.com/licecap/>
@@ -31,3 +32,14 @@ last_updated:
 输出文件：
 
 ![output](http://www.cockos.com/licecap/demo2.gif)
+
+
+## ScreenToGif
+在寻找的过程中还发现一款比较好用的工具，但只有在 Windows 平台上存在，这里也写上吧。
+
+官方地址：<https://screentogif.codeplex.com/>
+
+- 同样支持直接输出 Gif
+- 支持调整大小
+
+更多的介绍和使用说明可上官网查看。

@@ -5,7 +5,7 @@ tagline: ""
 description: "Android 上的神器"
 category: 整理合集
 tags: [Android, AndroidDev, Xposed, 整理合集]
-last_updated: 
+last_updated: 2016-10-03
 ---
 
 什么都不多说，这个神器就如 Chrome 下的 [Tampermonkey](/post/2015/08/userscripts.html),有很多神奇的待发现。
@@ -37,8 +37,13 @@ Android 6.0 的 framework zip 包在 [官网](http://dl-xda.xposed.info/framewor
 ### AdBlocker
 屏蔽广告，另外一个可选择的屏蔽广告的 module 叫做 MinMinGuard，还没尝试，效果应该也很好。很多 ROM 集成的 Adaway 似乎也不错。
 
-### FakeLocation
-模拟地址，但是 XPrivacy 也是可以有相同的功能的。
+### AppOpsXposed
+权限管理，一张图解释所有
+
+![AppOpsXposed](https://lh5.googleusercontent.com/-KW38IwvF_u0/V_IOa6ULO8I/AAAAAAABDcA/sKAiTCqhWAE5UiRzuOr5A2xmWdua7pWbgCL0B/w600-h849-no/Untitled%2Bimage.png)
+
+### Xposed Pokemon
+模拟地址，但是 XPrivacy 也是可以有相同的功能的。但是最后还是另一个 module 叫做 Xposed Pokemon 好用。
 
 ### GravityBox MM
 可以定制很多部分，包括状态栏，导航栏，感觉最有用的就是可以定制长按 recent 按钮弹出小的 Launcher。然后自定义快速点击 recent 两次切换最近使用应用也是很有用的。还可以给状态栏加上网速监测。
@@ -58,13 +63,21 @@ Android 6.0 的 framework zip 包在 [官网](http://dl-xda.xposed.info/framewor
 微信不撤回
 
 ### XInsta
-下载 Instagram 的图片，自从 IFTTT 不让我自动下载图片之后就诞生了这种需求。也正是因为这个需求让我发现并使用了 Xposed
+下载 Instagram 的图片，自从 IFTTT 不让我自动下载图片之后就诞生了这种需求。也正是因为这个需求让我发现并使用了 Xposed，然后又间接的找到了很多好玩的 module ，不过后来又找到了自动下载 ins 照片到 Google Drive 的[方法](/post/2016/09/auto-save-other-instagram-to-google-drive.html)。
 
 ### 运动修改器
 修改运动记步频率，还挺神奇的。
 
+### NavBar / StatusBar media visualizer [L-M]
+在导航栏或者状态栏显示音乐波形，太赞了。
+
 ## 不太需要的 module
 使用之后感觉不太需要的 module ，但是很强大的 module
+
+### XPrivacy
+很复杂的但是很强大的权限管理，非常细节，但是对新手不好，使用非常复杂。对权限要求比较高的可以尝试一下。
+
+链接： <http://repo.xposed.info/module/biz.bokhorst.xprivacy>
 
 ### Flat Style Bar Indicators
 高度自定义状态栏

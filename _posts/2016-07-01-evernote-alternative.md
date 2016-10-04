@@ -5,11 +5,11 @@ tagline: ""
 description: ""
 category: 经验总结
 tags: [Evernote]
-last_updated: 
+last_updated: 2016-10-04
 ---
 
 
-Evernote 最近一次的 Policy 更新真的太人人失望啦。如果说增加功能，增加收费，我完全不反对，我反对的是将现有的免费功能加入到收费功能中。
+Evernote 最近一次的 Policy 更新[^policy] 真的太人人失望啦。如果说增加功能，增加收费，我完全不反对，我反对的是将现有的免费功能加入到收费功能中。
 
 一些代替品：
 
@@ -49,3 +49,32 @@ OneNote, Google Keep, WizNote, Simplenote, youdao, Laverna
 经过以上的总结，接下来在 WizNote 以及 Laverna 中尝试选择一个当笔记同步使。为知笔记的Chrome [扩展](https://chrome.google.com/webstore/detail/jfanfpmalehkemdiiebjljddhgojhfab) ，相对 Evernote 弱了一些，但是也非常不错。 WizNote 当然各个客户端都有，最棒的是 Linux 客户端也有。多人编辑和笔记分享这一点 WIzNote 非 VIP 用户无法使用，但是单纯的当做笔记来用已经完全足够了。 最后代码高亮很早就已经支持了的。
 
 剩下的用 Evernote 来共享笔记，和别人协作好了。
+
+## 两个月之后更新
+
+现在已经稳定使用 WizNote 了， Evernote 中的数据基本导出到 WizNote，而目前 WizNote 使用过程中基本没有产生什么问题。现在就做一个 WizNote Review。官方的宣传中突出了如下特点：
+
+	多级目录、多级标签、Markdown、无限存贮空间
+
+而这4点确实很吸引人，多级目录和标签可以让文件夹更加整洁，原生支持 Markdown 让写作更加便捷，无限空间就让人不用担心。
+
+### Linux Mint 安装
+参考 [GitHub](https://github.com/WizTeam/WizQTClient) 或者 [官网](http://www.wiz.cn/wiznote-linux.html)，都有详细的安装说明。基本上使用如下命令即可。
+
+    $ sudo add-apt-repository ppa:wiznote-team
+    $ sudo apt-get update
+    $ sudo apt-get install wiznote
+
+### Evennote 迁移 WizNote
+WizNote 菜单中能很方便的导入 Evernote 中导出的文件。就不展开细讲了。
+
+### 扩展工具
+
+- Chrome Web clip，参考官网: <http://www.wiz.cn/downloads-webclipper.html>
+- url2wiz 工具，提供 url 就可以将内容保存到笔记：<https://note.wiz.cn/url2wiz>
+- 利用 IFTTT 可以将 InoReader 加心文章保存到 WizNote，查看我的 Recipe ： <https://ifttt.com/recipes/470673-save-star-article-in-inoreader-to-wiznote>
+
+###
+如果你也想用 WizNote ，可以用我的邀请码： <https://note.wiz.cn/i/eaa1f6a0> ，捂脸。
+
+[^policy]: Evernote [限制两台设备](https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/)

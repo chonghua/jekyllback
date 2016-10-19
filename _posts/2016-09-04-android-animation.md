@@ -2,9 +2,9 @@
 layout: post
 title: "Android Animation"
 tagline: ""
-description: ""
+description: "Android 动画实现"
 category: Android
-tags: [Android, AndroidDev]
+tags: [Android, AndroidDev, Animation,]
 last_updated: 
 ---
 
@@ -31,7 +31,7 @@ Android中提供的 4种 View 动画：
 以及 AnimationSet 动画集合，可以混合使用多种动画。 View Animation 都在 [view.animation](https://developer.android.com/reference/android/view/animation/package-summary.html) 包名下。
 
 
-Android系统在3.0之后推出了 Property Animation (属性动画)框架，属性动画可以用于任何对象，相比属性动画，View Animation (视图动画)的一个非常大的缺陷就是不具备交互性，当某个元素发生视图动画后，其响应事件的位置还依然是在动画前的地方，所以视图动画只能做普通的动画效果，避免交互的发生。但它的优点也非常明显，即效率比较高且使用方便。
+Android 系统在 3.0 之后推出了 Property Animation (属性动画)框架，属性动画可以用于任何对象，相比属性动画，View Animation (视图动画)的一个非常大的缺陷就是不具备交互性，当某个元素发生视图动画后，其响应事件的位置还依然是在动画前的地方，所以视图动画只能做普通的动画效果，避免交互的发生。但它的优点也非常明显，即效率比较高且使用方便。
 
 视图动画使用非常简单，不仅可以通过XML文件来描述一个动画过程，同样可以使用代码来控制整个动画过程。
 
@@ -43,11 +43,11 @@ animation.setDuration(long durationMillis);           // 设置动画时长
 animation.setRepeatCount(int repeatCount);        // 设置动画重复次数
 animation.setFillAfter(boolean);           // 动画执行完后是否停留在执行完的状态
 animation.setFillBefore(boolean);                 // 动画执行前是否应用状态
-animation.setStartOffset(long startOffset);          // 动画执行前的等待时间 
+animation.setStartOffset(long startOffset);          // 动画执行前的等待时间
 animation.setInterpolator(Interpolator i);         // 设置动画插值
 // 设置重复模式， 这个模式只有在 repeat count 大于0 或者 INFINITE 时才生效，有 RESTART 和 REVERSE 两种，RESTART 为重头播放，REVERSE  为逆向播放动画。
 animation.setRepeatMode(int repeatMode);
-animation.setStartTime(long startTimeMillis);      // 设置动画开始时间 
+animation.setStartTime(long startTimeMillis);      // 设置动画开始时间
 animation.start();            // 开始动画
 animation.startNow();           // 立即开始动画
 ```
@@ -177,9 +177,9 @@ ScaleAnimation(float fromX, float toX, float fromY, float toY, int pivotXType, f
 
 参数说明：
 
-- float fromX 动画起始时 X坐标上的伸缩尺寸 
-- float toX 动画结束时 X坐标上的伸缩尺寸 
-- float fromY 动画起始时Y坐标上的伸缩尺寸 
+- float fromX 动画起始时 X坐标上的伸缩尺寸
+- float toX 动画结束时 X坐标上的伸缩尺寸
+- float fromY 动画起始时Y坐标上的伸缩尺寸
 - float toY 动画结束时Y坐标上的伸缩尺寸
 - float pivotX 缩放中心X坐标
 - float pivotY 缩放中心Y坐标

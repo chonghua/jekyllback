@@ -5,7 +5,7 @@ tagline: ""
 description: "Android UI 测试，压力测试，monkey test"
 category: Android
 tags: [Andorid, AndroidDev, monkey]
-last_updated: 
+last_updated: 2016-10-18
 ---
 
 Android UI monkey 测试
@@ -41,17 +41,17 @@ Android UI monkey 测试
 | Option        |     描述              |
 |---------------| -----------------------|
 | -v   -vv   -vvv   |    三档等级，越来越详细 |
-| --throttle <milliseconds>     |  事件和事件之间延迟   |
-| --pct-touch <percent>   |  点击事件，单个点按下抬起，后接百分比 |
-| --pct-motion <percent>  |  滑动事件，某一点按下，随机移动距离，抬起|
-| --pct-trackball <percent>  |  模拟轨迹球，包含随机的移动，可能伴随着点击 |
-| --pct-nav <percent>  | 外部输入，上下左右操作（没有使用过，但似乎游戏可用） |
-| --pct-syskeys <percent>  |  调整系统事件，包括Home，back ，音量键等等 |
+| \-\-throttle <milliseconds>     |  事件和事件之间延迟   |
+| \-\-pct-touch <percent>   |  点击事件，单个点按下抬起，后接百分比 |
+| \-\-pct-motion <percent>  |  滑动事件，某一点按下，随机移动距离，抬起|
+| \-\-pct-trackball <percent>  |  模拟轨迹球，包含随机的移动，可能伴随着点击 |
+| \-\-pct-nav <percent>  | 外部输入，上下左右操作（没有使用过，但似乎游戏可用） |
+| \-\-pct-syskeys <percent>  |  调整系统事件，包括Home，back ，音量键等等 |
 | -p <allowed-package-name>  |  允许的 package name  |
 | -c <main-category>  |  指定允许monkey跑的 category，下面有例子 |
-| --ignore-crashes    |  通常monkey 遇到crash 会停止，此选项忽略crash 直到指定次数跑完|
-| --ignore-timeouts |   忽略 ANR |
-| --ignore-security-exceptions      |  忽略Permission error 或者其他 unhandled exception |
+| \-\-ignore-crashes    |  通常monkey 遇到crash 会停止，此选项忽略crash 直到指定次数跑完|
+| \-\-ignore-timeouts |   忽略 ANR |
+| \-\-ignore-security-exceptions      |  忽略Permission error 或者其他 unhandled exception |
 
 ## 测试特定Activity
 

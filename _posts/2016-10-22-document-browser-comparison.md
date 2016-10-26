@@ -14,8 +14,19 @@ last_updated:
 
 去除快速查看文档之外，还有另一个非常实用的功能就是 Code snippets，并且和一些 IDE，编辑器结合，能够通过少量的快捷键到达非常快速的输入。从另外一方面想，作为本地代码片段管理似乎也是不错的选择。
 
+Dash 比较突出的几大功能：
+
+- 自动保存状态，每次关闭都会记录状态，下次打开时会自动定位
+- 设备间同步，包括安装的文档，个人信息及收藏代码片段
+- 开发人员可以给公开的或者私有的文档或者例子添加评论
+- 对市面上常见的IDE都有插件支持
 
 ## Linux 下 Zeal
+Zeal 有如下几个功能：
+
+- 生成自己的技术文档
+- 免费并且开源，文档内容源自 Dash
+- 有 Vim，Emacs，Sublime Text 等插件
 
 ### Linux 下安装
 
@@ -28,3 +39,16 @@ last_updated:
 遇到 Bug 或者任何问题都可以到 GitHub 提出 issue：<https://github.com/zealdocs/zeal/issues>
 
 Zeal 安安稳稳的做好文档查看就已经很好了。
+
+### 配置
+Linux 下默认配置地址在：`~/.config/Zeal/Zeal.conf` 。
+
+离线文档地址：`～/.local/share/Zeal/Zeal/docsets`
+
+## Chrome下离线文档
+
+在搜索过程中又发现了一个查看文档的网站 <http://devdocs.io/> ,也同样可以使用Chrome插件达到离线查看文档的效果，但是看了一眼似乎没有 Android 的文档，但是其他似乎挺全的。并且整个网站还是开源的。 <https://github.com/Thibaut/devdocs>
+
+
+## reference
+- <https://bbvaopen4u.com/en/actualidad/dash-zeal-and-devdocs-way-organize-your-api-repository>

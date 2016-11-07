@@ -9,7 +9,7 @@ last_updated: 2016-10-04
 ---
 
 
-Evernote 最近一次的 Policy 更新[^policy] 真的太人人失望啦。如果说增加功能，增加收费，我完全不反对，我反对的是将现有的免费功能加入到收费功能中。
+Evernote 最近一次的 Policy 更新[^policy] 真的太人人失望啦。如果说增加功能，增加收费，我完全不反对，我反对的是将现有的免费功能加入到收费功能中。这是对自己曾经的承诺公然的放弃。
 
 一些代替品：
 
@@ -46,7 +46,7 @@ OneNote, Google Keep, WizNote, Simplenote, youdao, Laverna
 
 <https://laverna.cc>
 
-经过以上的总结，接下来在 WizNote 以及 Laverna 中尝试选择一个当笔记同步使。为知笔记的Chrome [扩展](https://chrome.google.com/webstore/detail/jfanfpmalehkemdiiebjljddhgojhfab) ，相对 Evernote 弱了一些，但是也非常不错。 WizNote 当然各个客户端都有，最棒的是 Linux 客户端也有。多人编辑和笔记分享这一点 WIzNote 非 VIP 用户无法使用，但是单纯的当做笔记来用已经完全足够了。 最后代码高亮很早就已经支持了的。
+经过以上的总结，接下来在 WizNote 以及 Laverna 中尝试选择一个当笔记同步使。为知笔记的Chrome [扩展](https://chrome.google.com/webstore/detail/jfanfpmalehkemdiiebjljddhgojhfab) ，相对 Evernote 弱了一些，但是也非常不错。 WizNote 当然各个客户端都有，最棒的是 Linux 客户端也有。多人编辑和笔记分享这一点 WizNote 非 VIP 用户无法使用，但是单纯的当做笔记来用已经完全足够了。 最后代码高亮很早就已经支持了的。
 
 剩下的用 Evernote 来共享笔记，和别人协作好了。
 
@@ -57,6 +57,8 @@ OneNote, Google Keep, WizNote, Simplenote, youdao, Laverna
 	多级目录、多级标签、Markdown、无限存贮空间
 
 而这4点确实很吸引人，多级目录和标签可以让文件夹更加整洁，原生支持 Markdown 让写作更加便捷，无限空间就让人不用担心。
+
+对于 WizNote 免费用户，单月上传流量 300M，单篇文章限制 30M，附件限制 30M，这个大小和容量，已经完全满足我日常使用。并且在这几个月的使用过程中，除了一次偶然的崩溃，同步，添加附件，甚至保存微信文章，保存邮件文章，都工作正常。
 
 ### Linux Mint 安装
 参考 [GitHub](https://github.com/WizTeam/WizQTClient) 或者 [官网](http://www.wiz.cn/wiznote-linux.html)，都有详细的安装说明。基本上使用如下命令即可。
@@ -74,7 +76,8 @@ WizNote 菜单中能很方便的导入 Evernote 中导出的文件。就不展�
 - url2wiz 工具，提供 url 就可以将内容保存到笔记：<https://note.wiz.cn/url2wiz>
 - 利用 IFTTT 可以将 InoReader 加心文章保存到 WizNote，查看我的 Recipe ： <https://ifttt.com/recipes/470673-save-star-article-in-inoreader-to-wiznote>
 
-###
+### 邀请
+
 如果你也想用 WizNote ，可以用我的邀请码： <https://note.wiz.cn/i/eaa1f6a0> ，捂脸。
 
-[^policy]: Evernote [限制两台设备](https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/)
+[^policy]: Evernote [限制两台设备登录](https://blog.evernote.com/blog/2016/06/28/changes-to-evernotes-pricing-plans/)

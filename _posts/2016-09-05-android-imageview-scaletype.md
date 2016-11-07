@@ -60,10 +60,29 @@ ImageView 的 ScaleType 属性决定了图片在 View 上显示时的样子，�
 
 在 xml 中使用定义： `android:scaleType="matrix"`
 
-## ImageView src 与 background 属性区别
+## 其他问题
+
+### ImageView src 与 background 属性区别
 
 每一种 View 都可以包含背景图片，而 ImageView 的 src 可以设置 ScaleType ，adjustViewBounds 等属性。
 
+### 保证 ImageView 长宽比
+center, center\_crop, center\_inside, fit\_center, fit\_start, fit\_end 等方式都会改变图片的比例，但是会有一定程度的裁剪。
+
+### 保持图片比例填满宽度
+
+使用如下 Layout
+
+    <ImageView
+        android:id="@id/img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+使用 `fitCenter` 来使图片填充整个 ImageView 宽度，并且进行等比例放缩。
+
+答案来自 [StackOverflow](http://stackoverflow.com/a/25069883/1820217)
 
 ## reference
 

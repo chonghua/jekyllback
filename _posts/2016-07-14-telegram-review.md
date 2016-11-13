@@ -23,6 +23,8 @@ last_updated:
 
 说了这么多，其实重点想要谈谈他的贴图以及 Bot 系统。首先是贴图，在刚上手 Telegram 的时候，我就被他丰富的表情震撼到了，就像他在 [Blog 中所说](https://telegram.org/blog/stickers)， Telegram 觉得现存任何一个 IM 的表情系统设置都不是很理想，封闭，收费，并且糟糕透顶，于是 Telegram 大笔一挥自己做了一套系统，这是我迄今为止使用过最赞的表情贴图系统。尤其是在最近迷上 Pokemon Go 之后，更是找到了很多萌萌的小精灵。
 
+![pokemon sticker](https://lh3.googleusercontent.com/-73Le-0Rx8L0/WCf4_fHYEzI/AAAAAAABGFI/Bm-EtR6ez2A0mG15eKHllMKuuaOBbKEOwCL0B/w350-h1120-no/Screenshot_20160710-155214.png)
+
 从下面两个网站能够找到你想要的绝大多数表情，多到无法想象：
 
 - <http://stickergram.ru/13.html>
@@ -55,10 +57,38 @@ Markdown bot 格式化输入
 ### @sticker
 inline bot，可以利用这个 bot 将普通的 emoji 转成其他表情贴图。
 
+然后是一些其他好玩的第三方 bot：
+
+- @GroupButler\_bot 用来管理群组的bot，可以设置 rules , 管理垃圾消息等等
+- @storebot 用来发现其他 bot 的 bot
+- @utubebot 下载 YouTube 视频
+- @Instasave\_bot 用来下载 instagram 的 bot
+
+
 ## SuperGroup
 最为人熟知的就是 Telegram 的聊天群了，在一个没有社交关系基础的 Message App 上，最快吸引大众的就是这个 Group 了，通过群组来建立最初的社交基础。而最初的 Group 功能没有那么强大，管理员也只能是创建群的人，后来 Telegram 升级了一次 supergroup ，于是乎 supergroup 就已经拥有了 Message App 该有的功能，管理员权限，置顶消息，消息管理，搜索等等功能，甚至可以再群中添加 bot 来实现一些自定义的功能。
 
 特别值得称道的便是，所有在 Telegram 中分享的内容都保存历史记录，虽然目前中文搜索有些问题，但是跨平台，消息同步已经让我无法离开这个应用了。
+
+最后来记录一些有爱的群组：
+
+- Google Fans <https://telegram.me/googlecn>
+- Kindle 中文圈 <https://telegram.me/kindlezh>
+- 线上狼人 <https://telegram.me/cnwolf>
+- Appinn Talk <https://telegram.me/appinn>
+- Openwrt <https://telegram.me/wirelessrouter>
+- /r/oneplus <https://telegram.me/joinchat/B9zpUzyx2bFy-Mgq25YFkg>
+
+## Channel
+频道的功能类似于微信的订阅号了，Channel 能实现一对多的通知，当然可以拿他当广播，但是和微信订阅号不同的时，Channel 是不能接收回复的。
+
+一些值得关注一下的频道：
+
+- Telegram 新手 <https://telegram.me/newbie_guide>
+- 好书分享 <https://telegram.me/haoshufenxiang>
+- Btsync Keys <https://telegram.me/btsync>
+- 我自己的阅读分享 <https://telegram.me/inoreader>
+- Pokemon Channel <https://telegram.me/PokemonChannel>
 
 ## Client
 最后推荐一个第三方 Android Client : Plus Messenger [Link](https://play.google.com/store/apps/details?id=org.telegram.plus&hl=en)。 虽然官方的客户端已经足够完美了，但是因为加入的群比较多，经常无法找到对应的目的地，这个第三方客户端完美的解决了这个问题。

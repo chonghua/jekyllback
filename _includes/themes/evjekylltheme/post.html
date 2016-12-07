@@ -53,7 +53,7 @@
 		<hr>
 
 		{% include JB/comments %}
-		<blockquote><p class="quote"></p></blockquote>
+		
 	</div>
 
 	<div class="col-xs-12 col-md-4">
@@ -72,9 +72,6 @@
 					{% include JB/tags_list %}
 				</ul>
 			{% endunless %}
-		<div id="floatbox">
-			<div class="g-plusone" data-annotation="inline" data-width="300"></div>
-			<div id="toc"></div></div>
 	</div>
 </div>
 
@@ -98,10 +95,4 @@
 			});
 		}
 
-		$.getJSON('/quotes.json', function(data){
-			var rand = Math.floor(Math.random()*data.quotes.length);
-			var entry = data.quotes[rand].quote +"    --"+ data.quotes[rand].name;
-			$('.quote').text(entry);
-		});
-	});
 </script>

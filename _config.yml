@@ -12,15 +12,14 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Verne in GitHub
+title : chonghua in GitHub
 tagline: Heal the World
-image: https://lh5.googleusercontent.com/-hnukhkmD--I/V4m8XAu5yCI/AAAAAAABAAE/M4l0oJTVFoIOZoY4hSG7-rgFwbgym5H5wCL0B/w512-h439-no/IMG_20160715_125428.jpg
 author :
-  name : Ein Verne
-  email : ein.verne@gmail.com
-  google : EinVerne
-  github : einverne
-  twitter : einverne
+  name : chonghua
+  email : hechonghua@msn.com
+  google : 
+  github : chonghua
+  twitter : chonghua
   feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
@@ -31,7 +30,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://einverne.github.io
+production_url : http://chonghua.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -89,7 +88,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : einvernegithubio
+      short_name : chonghuagithubio
     livefyre :
       site_id : 123
     intensedebate :

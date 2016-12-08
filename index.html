@@ -31,16 +31,16 @@ title: Verne in GitHub
 			{% if paginator.previous_page %}
 					{% if paginator.previous_page == 1 %}
 					<li>
-							<a href="/">&laquo; Previous</a>
+							<a href="/">&laquo; 上一页</a>
 					</li>
 					{% else %}
 					<li>
-							<a href="/page{{ paginator.previous_page }}">&laquo; Previous</a>
+							<a href="/page{{ paginator.previous_page }}">&laquo; 上一页</a>
 					</li>
 					{% endif %}
 			{% else %}
 					<li class="disabled">
-							<a>&laquo; Previous</a>
+							<a>&laquo; 上一页</a>
 					</li>
 			{% endif %}
 
@@ -68,11 +68,11 @@ title: Verne in GitHub
 
 			{% if paginator.next_page %}
 					<li>
-							<a href="/page{{paginator.next_page}}">Next &raquo;</a>
+							<a href="/page{{paginator.next_page}}">下一页 &raquo;</a>
 					</li>
 			{% else %}
 					<li class="disabled">
-							<a>Next &raquo;</a>
+							<a>下一页 &raquo;</a>
 					</li>
 			{% endif %}
 			</ul>

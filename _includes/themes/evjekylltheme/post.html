@@ -11,7 +11,7 @@
 				, Last modified on {{ page.last_updated | date: '%B %d, %Y' }}
 			{% endif %}
 			<span class="entry-author" itemprop="author">by {{ site.author.name }}</span>
-			| <a class="revision-histroy" href="https://github.com/einverne/einverne.github.io/commits/master/{{ page.path }}" target="_blank">View revision history</a>
+			| <a class="revision-histroy" href="https://github.com/chonghua/chonghua.github.io/commits/master/{{ page.path }}" target="_blank">View revision history</a>
 		</div>
 		<div class="post-content" itemprop="articleBody">
 			{{ content }}
@@ -40,13 +40,13 @@
 			{% if page.previous %}
 				<li class="previous"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous（前一篇）</a></li>
 			{% else %}
-				<li class="previous disabled"><a>&larr; Previous（前一篇）</a></li>
+				<li class="previous disabled"><a>&larr; 前一篇</a></li>
 			{% endif %}
-				<li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive（目录）</a></li>
+				<li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">目录</a></li>
 			{% if page.next %}
-				<li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next（后一篇） &rarr;</a></li>
+				<li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">后一篇 &rarr;</a></li>
 			{% else %}
-				<li class="next disabled"><a>Next（后一篇） &rarr;</a></li>
+				<li class="next disabled"><a>后一篇 &rarr;</a></li>
 			{% endif %}
 			</ul>
 		</nav>

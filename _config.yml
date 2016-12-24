@@ -8,8 +8,12 @@ prose:
     _posts:
       - name: "category"
         field:
-          element: "hidden"
-          value: "blog"
+          element: "select"
+          label: "新建"
+          placeholder: "选择分类"
+          options:
+            - name: "未分类"
+              value: "post"
       - name: "layout"
         field:
           element: "multiselect"
@@ -18,9 +22,9 @@ prose:
           options:
             - name: "文章"
               value: "post"
-            - name: "页面s"
+            - name: "页面"
               value: "page"
-      - name: "title"
+      - name: "标题"
         field:
           element: "text"
           label: "Title"
@@ -44,14 +48,14 @@ prose:
               value: "pears"
             - name: "Mangos"
               value: "mangos"
-      - name: "permalink"
+      - name: "固定链接"
         field:
           element: "text"
           label: "Permalink"
-          value: ""
+          value: "/post/:year/:month/:title.html"
 
-# For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /post/:year/:month/:title.html
+ #For more see: http://jekyllrb.com/docs/permalinks/
+#permalink: /post/:year/:month/:title.html
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "vendor", "Gemfile", "Gemfile.lock", ".travis.yml"]
 paginate: 10

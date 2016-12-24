@@ -12,13 +12,19 @@ prose:
           value: "blog"
       - name: "layout"
         field:
-          element: "hidden"
-          value: "blog"
+          element: "multiselect"
+          label: "新建"
+          placeholder: "选择类型"
+          options:
+            - name: "文章"
+              value: "post"
+            - name: "页面s"
+              value: "page"
       - name: "title"
         field:
           element: "text"
           label: "Title"
-          value: ""
+          value: "输入您的文章标题"
       - name: "splash"
         field:
           element: "text"
@@ -27,8 +33,8 @@ prose:
       - name: "tags"
         field:
           element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
+          label: "添加标签"
+          placeholder: "选择标签"
           options:
             - name: "Apples"
               value: "apples"
@@ -38,16 +44,6 @@ prose:
               value: "pears"
             - name: "Mangos"
               value: "mangos"
-    _posts/static:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "page"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
       - name: "permalink"
         field:
           element: "text"
